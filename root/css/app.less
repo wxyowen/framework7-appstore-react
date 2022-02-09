@@ -1,0 +1,316 @@
+/* Your app custom styles here */
+@import url("./_mixins.less");
+
+:root {
+  --f7-navbar-large-title-padding-left: 20px;
+  --f7-navbar-large-title-padding-right: 20px;
+  --f7-tabbar-label-font-size: 10px;
+  --f7-navbar-tablet-height: 50px;
+  --f7-list-item-padding-horizontal: 20px;
+  --f7-block-padding-horizontal: 20px;
+  @media (min-width: 768px) and (min-height: 600px) {
+    --f7-tabbar-label-font-size: 14px;
+  }
+}
+html:not(.theme-dark) .views {
+  --f7-page-bg-color: #fff;
+}
+html.theme-dark {
+  background-color: #000;
+  --f7-photobrowser-bg-color: #000;
+  body {
+    background-color: #000;
+  }
+  .views {
+    --f7-block-strong-border-color: rgba(255, 255, 255, 0.2);
+    --f7-list-border-color: rgba(255, 255, 255, 0.2);
+    --f7-list-item-border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@media (min-width: 1024px) and (min-height: 600px) {
+  .framework7-root .views {
+    --f7-safe-area-left: 44px;
+    --f7-safe-area-right: 44px;
+  }
+}
+
+
+.categories-list,
+.quick-links-list {
+  --f7-list-bg-color: transparent;
+  --f7-list-item-title-font-size: 21px;
+  @media (min-width: 768px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+.quick-links-list {
+  --f7-list-item-title-text-color: var(--f7-theme-color);
+}
+
+.buttons-list {
+  --f7-button-text-color: var(--f7-text-color);
+  --f7-button-bg-color: rgba(0,0,0,0.07);
+  --f7-button-pressed-bg-color: rgba(0,0,0,0.4);
+  --f7-button-border-radius: 10px;
+  display: grid;
+  row-gap: 10px;
+  .theme-dark & {
+    --f7-button-bg-color: rgba(255,255,255,0.11);
+    --f7-button-pressed-bg-color: rgba(255,255,255,0.075);
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+  }
+}
+.photo-browser .swiper-zoom-container {
+  box-sizing: border-box;
+  padding-top: calc(var(--f7-safe-area-top) + var(--f7-navbar-height));
+  padding-bottom: calc(var(--f7-safe-area-bottom));
+  img {
+    border-radius: 34px;
+  }
+}
+html.theme-dark .framework7-root > .views::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 400ms;
+}
+html.theme-dark.with-modal-popup-push .framework7-root > .views:after {
+  opacity: 1;
+}
+
+.list.safe-areas-inset {
+  padding-left: var(--f7-safe-area-left);
+  padding-right: var(--f7-safe-area-left);
+  > ul {
+    --f7-safe-area-left: 0px;
+    --f7-safe-area-right: 0px;
+  }
+}
+.no-script-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  img {
+    width: 128px;
+    height: 128px;
+  }
+}
+.preloader-intro {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --f7-preloader-size: 28px;
+}
+
+// Privacy Label Styling
+ol li, ul li {
+  list-style: none;
+}
+
+ul {
+list-style-type: disc;
+}
+
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+
+.animation-wrapper>:not(.animation-wrapper__container) {
+transition: opacity 250ms cubic-bezier(.21,.11,.18,1);
+}
+
+.section--bordered {
+border-top: 1px solid #d6d6d6;
+}
+
+.section {
+padding-top: 19px;
+padding-bottom: 32px;
+}
+
+.l-content-width {
+margin-left: auto;
+margin-right: auto;
+width: 692px;
+}
+
+.app-privacy {
+--r-globalnav-segmentbar-height: 0px;
+--r-globalnav-viewport-large-min-width: 1024px;
+--r-globalnav-viewport-large-max-width: 1441px;
+--r-globalnav-viewport-large-query: (min-width: 1024px);
+--r-globalnav-viewport-medium-min-width: 834px;
+--r-globalnav-viewport-medium-max-width: 1023px;
+--r-globalnav-viewport-medium-query: (max-width: 1023px);
+--r-globalnav-viewport-small-min-width: 420px;
+--r-globalnav-viewport-small-max-width: 833px;
+--r-globalnav-viewport-small-query: (max-width: 833px);
+--r-globalnav-viewport-xsmall-min-width: 320px;
+--r-globalnav-viewport-xsmall-max-width: 419px;
+--r-globalnav-viewport-xsmall-query: (max-width: 419px);
+--r-globalnav-segmentbar-text-color: rgba(255,255,255,0.92);
+--r-globalnav-segmentbar-border-color: rgba(255,255,255,0.24);
+--r-globalnav-height: 48px;
+--r-globalnav-segmentbar-background: #424245;
+-webkit-text-size-adjust: 100%;
+quotes: "“" "”";
+--r-localnav-viewport-large-min-width: 1024px;
+--r-localnav-viewport-large-query: (min-width: 1024px);
+--r-localnav-viewport-medium-min-width: 768px;
+--r-localnav-viewport-medium-max-width: 1023px;
+--r-localnav-viewport-medium-query: (min-width: 768px);
+--r-localnav-viewport-small-min-width: 320px;
+--r-localnav-viewport-small-max-width: 767px;
+--r-localnav-viewport-small-query: (min-width: 320px);
+--r-localnav-height: 48px;
+--r-localnav-stacked-height: 63px;
+--r-localnav-gn-height: var(--r-globalnav-height, 48px);
+font-size: 13px;
+line-height: 1.38462;
+font-weight: 400;
+letter-spacing: -.005em;
+font-family: "SF Pro Text","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #1d1d1f;
+font-style: normal;
+font-synthesis: none;
+-webkit-font-smoothing: antialiased;
+direction: ltr;
+text-align: left;
+box-sizing: inherit;
+margin-left: auto;
+margin-right: auto;
+width: 692px;
+padding-top: 19px;
+padding-bottom: 32px;
+border-top: 1px solid #d6d6d6;
+transition: opacity 250ms cubic-bezier(.21,.11,.18,1);
+}
+
+.section__nav {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.section__headline {
+margin-bottom: 17px;
+flex-shrink: 1;
+font-size: 20px;
+line-height: 1.2;
+font-weight: 700;
+letter-spacing: .024em;
+font-family: "SF Pro Display","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.app-privacy__cards {
+grid-template-columns: repeat(auto-fit,minmax(calc((100% - 20px)/ 2),1fr));
+margin-top: 13px;
+display: grid;
+grid-gap: 20px;
+}
+
+
+.app-privacy__card {
+padding: 28px 20px 20px;
+width: 100%;
+border-radius: 16px;
+background-color: #f8f8f8;
+}
+
+.privacy-type__icon {
+width: 32px;
+height: 32px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+}
+.privacy-type__icon svg {
+height: auto;
+width: 100%;
+fill: #0070c9;
+}
+.privacy-type__heading {
+margin-top: 9px;
+color: #111;
+text-align: center;
+font-size: 15px;
+line-height: 1.33338;
+font-weight: 600;
+letter-spacing: -.016em;
+// font-family: "SF Pro Text","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.privacy-type__description {
+margin-top: 6px;
+color: #666;
+text-align: center;
+font-size: 13px;
+line-height: 1.38462;
+font-weight: 400;
+letter-spacing: -.005em;
+font-family: "SF Pro Text","SF Pro Icons","Apple WebExp Icons Custom","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.privacy-type__items {
+margin-top: 11px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+-moz-column-gap: 10px;
+column-gap: 10px;
+}
+
+.privacy-type__grid {
+display: inline-grid;
+grid-gap: 10px;
+grid-template-columns: auto 1fr;
+grid-template-areas: "icon content";
+align-items: center;
+}
+
+.privacy-type__grid-icon {
+grid-area: icon;
+height: 22px;
+width: 22px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.privacy-type__glyph {
+height: 19px;
+width: 100%;
+fill: currentColor;
+}
+
+.privacy-type__grid-content {
+grid-area: content;
+}
