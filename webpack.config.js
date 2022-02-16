@@ -20,7 +20,7 @@ const target = process.env.TARGET || 'web';
 module.exports = {
   mode: env,
   entry: {
-    appdetails: './src/js/appdetails.js',
+    app: './src/js/app.js',
   },
   output: {
     path: resolvePath('www'),
