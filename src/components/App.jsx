@@ -50,48 +50,9 @@ const AppComponent = () => {
   }
   return (
     <App {...f7params}>
-
       <Views tabs className="safe-areas">
-        <Toolbar tabbar labels bottom>
-          <Link
-            onClick={() => onTabLinkClick('today')}
-            tabLink="#view-today"
-            tabLinkActive
-            iconF7="today"
-            text="Today"
-          />
-          <Link
-            onClick={() => onTabLinkClick('games')}
-            tabLink="#view-games"
-            iconF7="rocket_fill"
-            text="Games"
-          />
-          <Link
-            onClick={() => onTabLinkClick('apps')}
-            tabLink="#view-apps"
-            iconF7="layers_alt_fill"
-            text="Apps"
-          />
-          <Link
-            onClick={() => onTabLinkClick('arcade')}
-            tabLink="#view-arcade"
-            iconF7="gamecontroller_alt_fill"
-            text="Arcade"
-          />
-          <Link
-            onClick={() => onTabLinkClick('search')}
-            tabLink="#view-search"
-            iconF7="search"
-            text="Search"
-          />
-        </Toolbar>
-
-        <View id="view-today" onTabShow={() => setActiveTab('today')} main tab tabActive url="/today/" />
-        <View id="view-games" onTabShow={() => setActiveTab('games')} tab url="/games/" />
-        <View id="view-apps" onTabShow={() => setActiveTab('apps')} tab url="/apps/" />
-        <View id="view-arcade" onTabShow={() => setActiveTab('arcade')} tab url="/arcade/" />
-        <View id="view-search" onTabShow={() => setActiveTab('search')} tab url="/search/" />
-
+        {/* <View id="view-apps" onTabShow={() => setActiveTab('apps')} main tab tabActive url="/apps/" /> */}
+        <View id="view-apps" onTabShow={() => setActiveTab('apps')} main tab tabActive url="/app/544007664" />
       </Views>
     </App>
   );

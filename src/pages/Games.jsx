@@ -97,10 +97,6 @@ const Games = () => {
       </AppstoreBlockTitle>
       <List className="quick-links-list safe-areas-inset" noChevron noHairlines>
         <ListItem
-          title="Try Apple Arcade"
-          link="#"
-        />
-        <ListItem
           title="About In-App Purchases"
           link="#"
         />
