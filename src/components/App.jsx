@@ -52,7 +52,7 @@ const AppComponent = () => {
     <App {...f7params}>
       <Views tabs className="safe-areas">
         {/* <View id="view-apps" onTabShow={() => setActiveTab('apps')} main tab tabActive url="/apps/" /> */}
-        <View id="view-apps" onTabShow={() => setActiveTab('apps')} main tab tabActive url="/app/544007664" />
+        <View id="view-apps" onTabShow={() => setActiveTab('apps')} main tab tabActive url="/app/100000002" />
       </Views>
     </App>
   );

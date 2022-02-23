@@ -527,5 +527,73 @@
         "release_notes": "Enjoy our latest update where we have fixed some bugs and improved our app to provide you a seamless shopping experience."
       }
     ]
+  },
+  {
+    "id": 100000001,
+    "featured": "New update",
+    "title": "Flashlight",
+    "slug": "flashlight",
+    "subtitle": "Shine light with your phone",
+    "icon": "flashlight-icon.jpg",
+    "description": "This app makes your phone a flashlight, it helps you see in the dark.",
+    "price": "$0.00",
+    "release_date": "2022-01-05T00:00:00",
+    "size": 1123456,
+    "promotionalText": "",
+    "rating": 3.8,
+    "developer": {
+      "name": "MobileFlashlight co.",
+      "id": 100000001
+    },
+    "screenshots": [],
+    "versions": [
+      {
+        "version": "1.0",
+        "release_date": "2022-02-23T00:00:00",
+        "release_notes": "The latest version makes your flashlight brighter."
+      }
+    ],
+    "privacy_labels":[
+      {
+        "Data Used to Track You": [
+          "Contact Info",
+          "Identifiers"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 100000002,
+    "featured": "New update",
+    "title": "Notepad",
+    "slug": "notepad",
+    "subtitle": "Take a note on the go",
+    "icon": "notepad-icon.jpg",
+    "description": "You can take a note using your phone anytime, anywhere with you phone with the Notepad app.",
+    "price": "$0.00",
+    "release_date": "2022-01-10T00:00:00",
+    "size": 3123456,
+    "promotionalText": "",
+    "rating": 3.5,
+    "developer": {
+      "name": "MobileNotepad co.",
+      "id": 100000002
+    },
+    "screenshots": [],
+    "versions": [
+      {
+        "version": "1.1",
+        "release_date": "2022-02-23T00:00:00",
+        "release_notes": "The latest version makes you want to take notes more often."
+      }
+    ],
+    "privacy_labels":[
+      {
+        "Data Used to Track You": [
+          "Contact Info",
+          "Identifiers"
+        ]
+      }
+    ]
   }
 ]
